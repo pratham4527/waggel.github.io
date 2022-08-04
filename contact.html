@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waggel - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="index3.css">
+
+<style>
+
+    #cloths-slider1{
+        border:none;
+         margin:0px; 
+         padding:0px; 
+         height:40vh;
+         background: url(img/banner/b1.jpg);
+         width: 100%;
+         background-size: 100%; 
+         background-repeat: no-repeat; 
+         display: flex;
+         flex-direction: column;
+    }
+    #cloths-title1{
+        color: white; 
+        font-size: 61px;
+        margin: 0px; 
+        text-align: center;
+        justify-content: center;
+        padding-top: 90px;
+        text-shadow: 8px 8px 8px black;
+    }
+    #cloths-title2{
+        color: white; 
+        font-size: 22px; 
+        margin: 0px;
+        margin-top: -40px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0px;
+        text-shadow: 4px 4px 4px black;
+    }
+    #contact{
+            display: flex;
+            /* flex-direction: row; */
+            align-items: center;
+            padding: 40px;
+            justify-content: space-between;
+        }
+
+    #contact #info{
+        width: 40%;
+    }
+    #contact #info span{
+        font-size: 21px;
+        color: #808080c2;
+    font-weight: 600;
+    }
+    #contact #info h2{
+        font-size: 31px;
+        line-height: 36px;
+        padding: 0px 0px;
+    }
+    #contact #info h3{
+        font-size: 26px;
+        padding-bottom: 35px;
+    }
+    #contact #info h4{
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    #contact #info li{
+        list-style: none;
+        display: flex;
+        padding: 2px 0px;
+    }
+    #contact #info li i{
+        font-size: 21px;
+    padding-right: 23px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-left: 30px;
+    color: #454444;
+}
+    #contact #info li p{
+        margin: 0px;
+        font-size: 19px;
+        padding: -10px ;
+        color: #454444;
+    }
+
+
+   
+    footer{
+        padding: 40px 60px 10px 60px;
+    } 
+   
+    #contact .map{
+        width: 55%;
+        height: 400px;
+    }
+    #contact .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+    #cont-form{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        padding: 80px;
+        border: 1px solid black;
+    }
+    #cont-form form{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 10px 10px 10px;
+    }
+    #cont-form form span{
+        font-size: 21px;
+        color: #808080c2;
+    font-weight: 600;
+    }
+    #cont-form form h2{
+        font-size: 31px;
+        line-height: 36px;
+        padding: 0px 0px;
+    }
+    #cont-form form input, #cont-form form textarea{
+        width: 100%;
+        padding: 12px 15px;
+        outline: none;
+        font-size: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #cec9c9;
+    }
+    
+
+    .cont-btn{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    /* border-radius: 4px; */
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    /* border: none; */
+    outline: none;
+    transition: 0.2s;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.cont-btn:hover{
+    background-color: rgb(119 249 160);
+    border: 1px solid rgb(119 249 160);
+  
+}
+#cont-form .people{
+    margin-top: 150px;
+}
+#cont-form .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#cont-form .people div img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#cont-form .people div p{
+    margin: 0px;
+    font-size: 16px;
+    line-height: 25px;
+}
+#cont-form .people div p span{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
+
+    @media (max-width:820px){    
+        body {
+    margin-right: -264px;
+}
+
+
+        #cloths-slider1{
+            height:24vh;
+        }
+        #cloths-title1{
+                top: 23%;
+                left: 3%;
+                line-height: 46px;
+                font-size: 37px;
+        }
+        #cloths-slider1 {
+            width: 101%;
+        }
+        #header {
+            width: 96%;
+        }
+     
+        footer {
+    padding: 24px 15px 17px 15px;
+    width: 98%;
+}
+        #copyright{
+            width: 101%;
+        }
+        #cont-form {
+    
+    padding: 50px;
+
+}
+#cont-form form {
+    width: 50%;
+}
+
+
+
+
+
+    }
+    @media (max-width:415px){
+        body {
+    margin: 0px;
+}
+       
+        #cloths-slider1 {
+    width: 100%;
+    background-size: cover;
+} 
+        #cloths-title1 {
+            line-height: 37px;
+    font-size: 31px;
+    padding-top: 61px;
+        }
+        #header {
+    width: 86%;
+}
+#cloths-title2 {
+    color: white;
+    font-size: 16px;
+}
+#about-img img {
+    margin-left: 150px;
+}
+#contact #info li i {
+    font-size: 21px;
+    padding-right: 23px;
+    padding-top: 4px;
+    padding-left: 0px;
+}
+#contact #info li p {
+    margin: 0px;
+    font-size: 19px;
+}
+#about-info {
+    padding: 0px 35px 20px 35px;
+    margin-top: 5px;
+    margin-left: 140px;
+    width: 100%;
+    font-size: 22px;
+}
+#contact #info {
+    width: 80%;
+    margin-bottom: 40px 10px;
+}
+
+#contact{
+    flex-direction: column;
+    margin: 15px;
+    padding: 0px;
+}
+#copyright {
+    width: 111%;
+}
+#cont-form form {
+    width: 75%;
+    margin-left: -10px;
+}
+#cont-form .people {
+    margin-top: 25px;
+}
+#cont-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 28px;
+    /* margin-right: 0px; */
+    padding: 35px 0px;
+    border: 1px solid black;
+    /* margin-top: 10px; */
+}
+#cont-form .people div img {
+    width: 100px;
+    height: 100px;
+    margin-right: 11px;
+}
+#cont-form .people div p {
+    font-size: 17px;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+footer {
+    padding: 25px 50px 17px 50px;
+    width: 76%;
+}
+#copyright {
+    width: 100%;
+}
+
+       
+    }
+</style>
+
+
+
+
+</head>
+<body>
+    
+<section id="header">
+        <div id="logocomb">
+        <img id="logo1" src="logo1withoutbg.png" alt="">
+        <i id="cartlogo1" class="fa-solid fa-cart-shopping"></i>
+    </div>
+        <div>
+            <ul id="navbar">
+                <li><button class="barbtn" id="barclose" onclick="barfun2()"  ><i class="fa-solid fa-xmark"></i></button></li>
+                <li><a  href="index.php">Home</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a  href="blogs.html">Blogs</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="http://localhost/internship/loginform.php" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+                <li style="padding: 1px 0px 1px 5px; cursor:pointer;">
+                        <?php echo $_SESSION['username']?>
+                </li>
+                <li style="padding: 1px 5px 1px 5px;" >
+                <li style="padding: 1px 1px 1px 0px;" >
+                <form action='logout.php'>
+                    <button style="padding:0px 4px ; background-color: transperent; color: white; background-color: transparent; border: 2px solid white; font-size: 15px; font-family: 'Baloo Bhai 2'; cursor:pointer;"  > Logout </button>
+                </form>
+                </li>
+               
+            </ul>
+            
+        </div>
+       <div id="mobile">
+       <button class="barbtn" onclick="barfun1()"><i class="fa-solid fa-bars"></i></i></button> 
+       </div>
+</section>
+
+<section>
+    <div id='cloths-slider1'>
+        <h1 id='cloths-title1'>#let's_talk</h1><br>
+        <h3 id='cloths-title2'>LEAVE A MESSAGE. We love to hear from you!</h3>
+    </div>
+</section>
+
+<section id="contact">
+    <div id="info">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today</h2>
+        <h4>Head Office</h4>
+        <div>
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>&nbsp; 45 M. R. Road, Sector 5, Matunga East, Mumbai</p>
+            </li>
+            <li>
+                <i class="far fa-envelope"></i>
+                <p>waggelmart@45.com</p>
+            </li>
+            <li>
+                <i class="fas fa-phone-alt"></i>
+                <p>+01 4545 273 / +91 9453934880</p>
+            </li>
+            <li>
+                <i class="far fa-clock"></i>
+                <p>10:00 - 10:00, Mon - Fri</p>
+            </li>
+        </div>
+    </div >
+ 
+    <div class="map" style ="margin: 10px; width: 50%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9076105562845!2d72.85467891482104!3d19.023792387117926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf267184e037%3A0x2961c4004c5c2f65!2sVJTI%20Mechanical%20And%20Production%20Engineering%20Dept.!5e0!3m2!1sen!2sin!4v1656999416360!5m2!1sen!2sin" width="200%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</section>
+
+<section id="cont-form">
+    <form action="contact.php" method="POST">
+        <span>Leave a message</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" name="cname" id="" placeholder="Enter the Name">
+        <input type="email" name="cemail" id="" placeholder="Enter the Email-id">
+        <input type="text" name="csubject" id="" placeholder="Enter the Subject">
+        <textarea name="cmssg" id="" cols="30" rows="10" placeholder="Enter the Message/Query"></textarea>
+        <button class="cont-btn" type="submit">Submit</button>
+    </form>
+
+    <div class="people">
+        <div>
+            <img src="img/people/avatar1c.png" alt="">
+            <p><span>Ajay Kumar</span>Senior Marketing Manager <br>Phone : +000 654 2389 <br>Email : akwaggel@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/avatar2c.png" alt="">
+            <p><span>M. S. Sharma</span>Senior Sales Manager <br>Phone : +000 256 9696 <br>Email : mswaggel@gmail.com</p>
+        </div>
+        <div>
+            <img src="img/people/avatar3c.png" alt="">
+            <p><span>John Dais</span>Senior Marketing Manager <br>Phone : +000 356 5582 <br>Email : jdwaggel@gmail.com</p>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+<section>
+
+        <footer>
+           
+            <div class="col">
+                <div id="logocomb">
+                    <img id="logo1" src="logo1withoutbg.png" alt="">
+                    <i id="cartlogo1" class="fa-solid fa-cart-shopping"></i>
+                </div >
+                <h4 class="ftitle">Contact</h4>
+                <p class="fcontact"><strong>Address: </strong> 45,M.R.Road, Sector 5, Matunga-E, Mumbai</p>
+                <p class="fcontact"><strong>Phone: </strong> +01 4545 273 / +91 9453934880 </p>
+                <p class="fcontact"><strong>Hours: </strong> 10:00 - 10:00, Mon - Fri</p>
+                <div class="follow" class="fcontact">
+                    <h4 class="ftitle" id="followus">Follow us </h4>
+                    <div class="fcontact" >
+                        <i class="fab fa-facebook-f"></i>&nbsp;
+                        <i class="fab fa-twitter"></i>&nbsp;
+                        <i class="fab fa-instagram"></i>&nbsp;
+                        <i class="fab fa-youtube"></i>&nbsp;
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <h4 class="ftitle">About</h4>
+                <a href="http://localhost/internship/about.html">About Us</a>
+                <a href="#">Delivery Status</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="http://localhost/internship/contact.html">Contact us</a>
+            </div>
+        
+            <div class="col">
+                <h4 class="ftitle">My Account</h4>
+                <a href="http://localhost/internship/loginform.php" target="_blank">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+        
+            <div class="col">
+                <h4 class="ftitle">Install App</h4>
+                <p class="fapp">From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p class="fapp">Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        
+        </footer>
+        
+        <div >
+            <!-- <p id="copyright">Copyright@ 2022-23 www.waggel.com</p> -->
+            <p id="copyright"> © &nbsp;2022-2023, &nbsp;www.waggel.com</p>
+        </div>
+             
+</section>
+
+    
+<script>
+    let len1=document.getElementById("navbar").style.right;
+
+function barfun1(){
+    document.getElementById("navbar").style.right="0px";
+}
+
+function barfun2(){
+    document.getElementById("navbar").style.right="-300px";
+}
+</script>
+    
+
+
+</body>
+</html>
